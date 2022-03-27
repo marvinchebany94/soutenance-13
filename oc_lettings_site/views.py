@@ -42,10 +42,10 @@ def lettings_index(request):
 
 
 def letting(request, letting_id):
-    letting = Letting.objects.get(id=letting_id)
+    letting_queryset = Letting.objects.get(id=letting_id)
     context = {
-        'title': letting.title,
-        'address': letting.address,
+        'title': letting_queryset.title,
+        'address': letting_queryset.address,
     }
     return render(request, 'letting.html', context)
 
@@ -68,6 +68,6 @@ def profiles_index(request):
 
 
 def profile(request, username):
-    profile = Profile.objects.get(user__username=username)
-    context = {'profile': profile}
+    users_profile = Profile.objects.get(user__username=username)
+    context = {'profile': users_profile}
     return render(request, 'profile.html', context)
