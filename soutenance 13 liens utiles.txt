@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=qixAZdj-I4I
+https://kbroman.org/github_tutorial/pages/first_time.html
+https://linuxtut.com/fr/3fb33a4fcba45ebfab49/
+
+git init
+git clone adresse-github
+git commit -m "titre du commit"
+git push origin ci/cd
+git status ( pr voir sur quelle branche on se trouve )
+git chekout "nom de branche" pr changer de branche
+git add "nom de fichier" pr ajouter un fichier
+
+https://www.delftstack.com/fr/howto/django/django-project-structure/
+https://stackoverflow.com/questions/54730747/how-do-i-use-a-template-from-one-app-in-another-app
+https://stackoverflow.com/questions/29840382/single-django-app-to-use-multiple-sqlite3-files-for-database
+https://docs.djangoproject.com/fr/2.2/topics/db/multi-db/#:~:text=Django's%20admin%20doesn't%20have,a%20specific%20database%20for%20content.
+https://stackoverflow.com/questions/22386580/django-settings-per-application-best-practice
+https://code.djangoproject.com/wiki/SplitSettings
+https://stackoverflow.com/questions/45317177/pointing-django-to-different-template-directory
+https://stackoverflow.com/questions/50670173/import-model-from-another-app-django
+
+pour les tests :
+https://openclassrooms.com/fr/courses/7155841-testez-votre-projet-python/7414181-implementez-vos-tests-pour-framework-django-avec-pytest-django
