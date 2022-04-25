@@ -21,3 +21,8 @@ https://stackoverflow.com/questions/50670173/import-model-from-another-app-djang
 
 pour les tests :
 https://openclassrooms.com/fr/courses/7155841-testez-votre-projet-python/7414181-implementez-vos-tests-pour-framework-django-avec-pytest-django
+https://circleci.com/blog/continuous-integration-for-django-projects/?utm_source=google&utm_medium=sem&utm_campaign=sem-google-dg--emea-en-dsa-maxConv-auth-brand&utm_term=g_-_c__dsa_&utm_content=&gclid=Cj0KCQjw3v6SBhCsARIsACyrRAmWrXHGclCXWQqgqZ-l3ciykPXhBLHTrPfjxd3sVgLeJ0Bz9ZHvGuUaAtRLEALw_wcB
+https://github.com/CircleCI-Public/circleci-demo-python-django/blob/master/.circleci/config.yml
+https://earthly.dev/blog/circle-ci-with-django/
+https://circleci.com/blog/django-deploy/
+https://circleci.com/developer/orbs/orb/circleci/python
