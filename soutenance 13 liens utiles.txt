@@ -26,3 +26,5 @@ https://github.com/CircleCI-Public/circleci-demo-python-django/blob/master/.circ
 https://earthly.dev/blog/circle-ci-with-django/
 https://circleci.com/blog/django-deploy/
 https://circleci.com/developer/orbs/orb/circleci/python
+https://circleci.com/docs/2.0/project-walkthrough/#deploying-to-heroku
+https://linuxtut.com/fr/54f49f359259f2efd130/

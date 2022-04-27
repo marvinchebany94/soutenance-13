@@ -1,0 +1,21 @@
+# pull the official base image
+FROM python:3.8.3-alpine
+
+# set work directory
+WORKDIR E:\Desktop\openclassroom\soutenance 13\soutenance-13
+
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1docker push marvinchebany94/oc_lettings_site:tagname
+ENV PYTHONUNBUFFERED 1
+
+# install dependencies
+RUN pip install --upgrade pip
+COPY ./requirements.txt E:\Desktop\openclassroom\soutenance 13\soutenance-13
+RUN pip install -r requirements.txt
+
+# copy project
+COPY E:\Desktop\openclassroom\soutenance 13\soutenance-13
+
+EXPOSE 8000
+
+CMD ["python", "manage.py", "runserver", "127.0.0.1:8000"]
