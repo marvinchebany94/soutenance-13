@@ -4,8 +4,9 @@ from . import views
 from lettings import views as lettings_views
 from profiles import views as profiles_views
 
+app_name = "oc_lettings_site"
 urlpatterns = [
-    path('', include('lettings.urls', 'lettings')),
+    path('', include('lettings.urls', 'lettings'), name="lettings"),
     path('', include('profiles.urls', 'profiles')),
     #path('lettings/', lettings_views.lettings_index, name='lettings_index'),
     #path('lettings/<int:letting_id>/', lettings_views.letting, name='letting'),
