@@ -41,18 +41,12 @@ jobs:
       - run:
           name: Run Linting flake
           command : flake8 --ignore=W292
-  dockers-image-building-pushing:
-    docker:
-      - image: cimg/python:3.10.2
-    steps:
-      - checkout
-      - setup_remote_docker
       - run:
-          name: login / image building / image pushing
+          name: login | image creating | image pushing
           command: |
-            echo $CIRCLE_SHA1 | docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-            docker build -t ${DOCKER_USERNAME}/oc_lettings:$CIRCLE_SHA1 .
-            docker push ${DOCKER_USERNAME}/oc_lettings:$CIRCLE_SHA1
+            docker login -u ${DOCKER_USERNAME} --password-stdin ${DOCKER_PASSWORD}
+            docker build -t ${DOCKER_USERNAME}/oc_lettings_site:$CIRCLE_SHA1 .
+            docker push ${DOCKER_USERNAME}/oc_lettings_site:$CIRCLE_SHA1
 
 
 
