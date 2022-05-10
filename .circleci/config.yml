@@ -40,7 +40,7 @@ jobs:
           command: pytest
       - run:
           name: Run Linting flake
-          command : flake8
+          command : flake8 --ignore=W292
   dockers-image-building-pushing:
     docker:
       - image: cimg/python:3.10.2
