@@ -111,7 +111,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
+"""
 sentry_sdk.init(
     dsn="https://8bc4070b4e8d4a65b38518162e9940f5@o1267281.\
 ingest.sentry.io/6453466",
@@ -125,4 +125,4 @@ ingest.sentry.io/6453466",
     # If you wish to associate users to errors (assuming you are using
     # django.contrib.auth) you may enable sending PII data.
     send_default_pii=True
-)
+)"""
